@@ -3,63 +3,130 @@
     margin: 0;
     font-size: 22px;
 }
-ul{
-    display: inline-block;
-    margin-left: 10%;
-    /*padding: 20px 0;*/
-}
-input{
-    margin-left: 16%;
-    border-radius: 40px;
-    border: solid 1px #f6f6f6;
-    background: rgba(218, 218, 218, 0.63);
-    width: 16%;
-    height: 45px;
-    font-size: 18px;
-    outline: none;
-}
+/*ul{*/
+/*    display: inline-block;*/
+/*    margin-left: 10%;*/
+/*    !*padding: 20px 0;*!*/
+/*}*/
+/*input{*/
+/*    margin-left: 16%;*/
+/*    border-radius: 40px;*/
+/*    border: solid 1px #f6f6f6;*/
+/*    background: rgba(218, 218, 218, 0.63);*/
+/*    width: 16%;*/
+/*    height: 45px;*/
+/*    font-size: 18px;*/
+/*    outline: none;*/
+/*    padding-left:  30px;*/
+/*}*/
 
-.top-header{
-    margin-left: 19%;
-}
-.top-header2{
-    margin-left:  2%;
-}
+/*.top-header{*/
+/*    margin-left: 19%;*/
+/*}*/
+/*.top-header2{*/
+/*    margin-left:  2%;*/
+/*}*/
 
-.iconfont:before{
-    font-size: 33px;
-}
-.iconfont{
-    margin-left: -2.5%;
-    position: relative;
-    top: 6px;
-}
-.top-header li{
-    display: inline-block;
-    padding: 20px 20px;
-}
+/*.iconfont:before{*/
+/*    font-size: 33px;*/
+/*}*/
+/*.iconfont{*/
+/*    margin-left: -2.5%;*/
+/*    position: relative;*/
+/*    top: 6px;*/
+/*}*/
+/*.top-header li{*/
+/*    display: inline-block;*/
+/*    padding: 20px 20px;*/
+/*}*/
 
-.top-header2 li{
-    display: inline-block;
-    padding: 0 10px;
-}
-.ll{
-    text-decoration: none;
-    color: #000;
-}
-.ll:hover{
-    color: #ef5556;
-}
+/*.top-header2 li{*/
+/*    display: inline-block;*/
+/*    padding: 0 10px;*/
+/*}*/
+/*.ll{*/
+/*    text-decoration: none;*/
+/*    color: #000;*/
+/*}*/
+/*.ll:hover{*/
+/*    color: #ef5556;*/
+/*}*/
 
-.top-top{
-    border-bottom: solid 1px #d8d8d8;
-}
+/*.top-top{*/
+/*    border-bottom: solid 1px #d8d8d8;*/
+/*}*/
 .content{
     margin: 3% auto;
     width: 60%;
     height: 30%;
     padding: 1% 0;
     border: solid 1px #d8d8d8;
+}
+.top {
+    width: 100%;
+    height: 40px;
+    background-color: #baf;
+    /*background:url(img/1.11.png);*/
+}
+
+/*首页导航栏*/
+.top .a {
+    width: 100%;
+    height: 38px;
+    background: /*rgba(255,255,255,0.5);*/ white;
+}
+
+.top .a .b { /*无序列表*/
+    width: 1000px;
+    height: 38px;
+    /*	background-color:pink;*/
+    margin: 0 auto;
+}
+
+.top .a .b ul li {
+    width: 70px;
+    height: 38px;
+    /*快速注释 Ctrl+/*/
+    list-style: none; /*取消无序列表前的小圆点*/
+
+    float: left; /*让无序列表横着,默认是竖着的*/
+    line-height: 38px; /*上下居中 输入行高 字一行的高度 会自动到38的一半的高度 */
+    text-align: center; /*左右居中*/
+    font-size: 16px;
+    text-align: center;
+    font-family: 微软雅黑;
+    /*background-color:deeppink;*/
+
+}
+
+.top .a .b ul li:hover /*当鼠标放到元素上变化*/
+{
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.top .a .b ul li a {
+    text-decoration: none; /*取消a的下划线*/
+    display: block;
+    height: 38px;
+    width: 70px;
+    /*a是行间元素 即不能设置长和宽要加那个display：block； 展示方式变成块级元素
+    div是块级元素 可以设置长和宽*/
+    color: #000;
+}
+
+.top .a .b ul li.tougao {
+    height: 50px;
+    width: 70px;
+    background: deeppink;
+    border-radius: 0 0 15px 15px; /*上右下左 圆角*/
+
+}
+
+.top .a .b ul li.tougao a {
+    height: 50px;
+    width: 70px;
+    display: block;
 }
 .mid-first{
     padding: 1% 0;
@@ -149,4 +216,10 @@ input{
 }
 .btn-shop:hover{
     background: rgba(232, 82, 82, 0.79);
+}
+
+.btn-2{
+    background: #ef5556;
+    color: white;
+    border-radius: 15px;
 }
